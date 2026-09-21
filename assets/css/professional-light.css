@@ -28,8 +28,7 @@ html[data-portfolio-theme="professional-light"] body {
 html[data-portfolio-theme="professional-light"] body::before {
   opacity: 0.035;
   background-image:
-    linear-gradient(rgba(33, 127, 145, 0.24) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(33, 127, 145, 0.24) 1px, transparent 1px);
+    linear-gradient(rgba(33, 127, 145, 0.24) 1px, transparent 1px), linear-gradient(90deg, rgba(33, 127, 145, 0.24) 1px, transparent 1px);
   background-size: 64px 64px;
   mask-image: linear-gradient(to bottom, black, transparent 55%);
 }

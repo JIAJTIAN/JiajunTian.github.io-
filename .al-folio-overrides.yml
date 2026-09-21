@@ -7,4 +7,4 @@ overrides:
     upstream_path: _layouts/cv.liquid
     upstream_sha256: c586e8051e785b492a0f4452c4e06798d47a8c363d29487e48de4fcd9851700e
     local_sha256: 2f9c21192b894a5566251fde89843fbe9772d13c51d14ad54a2dcb434408fb73
-    acknowledged_at: '2026-08-10'
+    acknowledged_at: "2026-08-10"
