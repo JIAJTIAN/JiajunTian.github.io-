@@ -1,4 +1,4 @@
-name: Integration tests
+name: Website checks
 
 on:
   push:
@@ -10,6 +10,8 @@ on:
       - "Gemfile"
       - "Gemfile.lock"
       - "_config.yml"
+      - "_bibliography/**"
+      - "_layouts/**"
       - "_data/**"
       - "_pages/**"
       - "_posts/**"
@@ -28,6 +30,8 @@ on:
       - "Gemfile"
       - "Gemfile.lock"
       - "_config.yml"
+      - "_bibliography/**"
+      - "_layouts/**"
       - "_data/**"
       - "_pages/**"
       - "_posts/**"
@@ -39,7 +43,7 @@ on:
       - ".github/workflows/unit-tests.yml"
 
 jobs:
-  comments-integration-tests:
+  website-checks:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
@@ -66,33 +70,19 @@ jobs:
       - name: Install JS deps 📦
         run: npm ci
 
-      - name: Run style contract lint 🧷
-        # The thin-starter ownership rule does not apply to personal-site overrides.
-        if: github.repository == 'alshedivat/al-folio'
-        run: npm run lint:style-contract
-
       - name: Install build prerequisites 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
           pip3 install --upgrade nbconvert
 
-      - name: Run comments integration test 🧪
-        run: bash test/integration_comments.sh
+      # Starter demo tests remain in test/ for reference, but do not describe this site.
+      - name: Build production website
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --baseurl "/JiajunTian.github.io-"
 
-      - name: Run plugin toggle integration test 🔌
-        run: bash test/integration_plugin_toggles.sh
+      - name: Check published pages, links, and assets
+        run: python3 test/personal_site.py _site /JiajunTian.github.io-
 
-      - name: Run distill integration test 📄
-        run: bash test/integration_distill.sh
-
-      - name: Run bootstrap compatibility integration test 🧩
-        run: bash test/integration_bootstrap_compat.sh
-
-      - name: Run upgrade CLI integration test ⬆️
-        run: bash test/integration_upgrade_cli.sh
-
-      - name: Run CSS minify integration test 🎨
-        run: bash test/integration_css_minify.sh
-
-      - name: Run new plugin integration checks 🧩
-        run: bash test/integration_new_plugins.sh
+      - name: Check theme switching and preferences
+        run: node test/personal_theme.cjs
