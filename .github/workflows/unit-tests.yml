@@ -67,6 +67,8 @@ jobs:
         run: npm ci
 
       - name: Run style contract lint 🧷
+        # The thin-starter ownership rule does not apply to personal-site overrides.
+        if: github.repository == 'alshedivat/al-folio'
         run: npm run lint:style-contract
 
       - name: Install build prerequisites 🔧
