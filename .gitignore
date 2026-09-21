@@ -13,6 +13,12 @@ assets/rendercv/rendercv_output/*.typ
 al-folio-upgrade-report.md
 node_modules/
 tmp/
+# Private source materials must stay outside the published repository.
+**/[Nn][Ii][Ww]*/
+**/[Nn][Ii][Ww]*
+**/[Jj]ob [Aa]pplication*/
+**/APS Sector 26 HXN*/
+private-materials/
 output/playwright/
 test-results/
 vendor

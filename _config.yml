@@ -219,6 +219,11 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
+  # Defense in depth for local private-source folders; Git ignores them too.
+  - "**/[Nn][Ii][Ww]*"
+  - "**/[Jj]ob [Aa]pplication*"
+  - "**/APS Sector 26 HXN*"
+  - private-materials/
   - tmp/
   - _posts/ # Preserve starter examples locally without publishing them.
   - _news/ # Restore alongside About announcements when research news is ready.
