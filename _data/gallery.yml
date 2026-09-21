@@ -1,0 +1,48 @@
+- image: /assets/img/1.jpg
+  title: Roads into the unknown
+  category: landscapes
+  category_label: Landscapes
+  caption: Travel, scale, and the geometry of a route through changing terrain.
+  alt: A mountain road approaching a stone tunnel
+  featured: true
+  sample: true
+
+- image: /assets/img/2.jpg
+  title: Motion in a still frame
+  category: details
+  category_label: Details
+  caption: Small changes in light and motion can transform an ordinary scene.
+  alt: Autumn leaves suspended above a forest floor
+  sample: true
+
+- image: /assets/img/4.jpg
+  title: Edge conditions
+  category: landscapes
+  category_label: Landscapes
+  caption: Where water, rock, and light meet, boundaries become the subject.
+  alt: Waves breaking over rocks at sunset
+  sample: true
+
+- image: /assets/img/6.jpg
+  title: A different point of view
+  category: places
+  category_label: Places
+  caption: New perspectives reveal patterns that are difficult to see from the ground.
+  alt: Hot-air balloons crossing a sunlit valley
+  sample: true
+
+- image: /assets/img/9.jpg
+  title: Notes in progress
+  category: everyday
+  category_label: Everyday
+  caption: Reading, sketching, and making room for ideas beyond the laboratory.
+  alt: An open notebook beside a cup of coffee
+  sample: true
+
+- image: /assets/img/10.jpg
+  title: Designed structure
+  category: places
+  category_label: Places
+  caption: Architecture is another way to study form, constraint, and visual rhythm.
+  alt: The Flatiron Building viewed against a blue sky
+  sample: true

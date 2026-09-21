@@ -1,0 +1,342 @@
+html[data-portfolio-theme="elden"] {
+  color-scheme: dark;
+  --global-bg-color: #080704;
+  --global-code-bg-color: #15120c;
+  --global-text-color: #dfd7c3;
+  --global-text-color-light: #988e78;
+  --global-theme-color: #c8a45a;
+  --global-hover-color: #f1d998;
+  --global-hover-text-color: #090704;
+  --global-footer-bg-color: #050402;
+  --global-footer-text-color: #8e826c;
+  --global-footer-link-color: #d4b86e;
+  --global-divider-color: rgba(200, 164, 90, 0.32);
+  --global-card-bg-color: #12100b;
+  --global-highlight-color: #d9c27b;
+  --global-back-to-top-bg-color: #c8a45a;
+  --global-back-to-top-text-color: #080704;
+}
+
+html[data-portfolio-theme="elden"] * {
+  scrollbar-color: #9c7c3e #080704;
+}
+
+html[data-portfolio-theme="elden"] ::selection {
+  color: #080704;
+  background: #c8a45a;
+}
+
+html[data-portfolio-theme="elden"] body {
+  color: #dfd7c3;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.12rem;
+  letter-spacing: 0.018em;
+  background-color: #080704;
+  background-image:
+    linear-gradient(90deg, rgba(8, 7, 4, 0.9) 0%, rgba(8, 7, 4, 0.7) 43%, rgba(8, 7, 4, 0.25) 100%),
+    linear-gradient(180deg, rgba(8, 7, 4, 0.08) 0%, rgba(8, 7, 4, 0.42) 100%), url("../img/elden-erdtree-reference.webp");
+  background-position:
+    center,
+    center,
+    62% top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+html[data-portfolio-theme="elden"] body::before {
+  opacity: 0.2;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(225, 192, 111, 0.8) 0 1px, transparent 1.8px),
+    radial-gradient(circle at 72% 52%, rgba(225, 192, 111, 0.45) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 46% 82%, rgba(225, 192, 111, 0.5) 0 1px, transparent 1.6px);
+  background-size:
+    137px 131px,
+    193px 181px,
+    229px 211px;
+  mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.45));
+}
+
+html[data-portfolio-theme="elden"] a {
+  color: #d7bd79;
+  font-weight: 600;
+  text-decoration-color: rgba(200, 164, 90, 0.36);
+}
+
+html[data-portfolio-theme="elden"] a:hover {
+  color: #f1d998;
+  text-shadow: 0 0 16px rgba(200, 164, 90, 0.32);
+}
+
+html[data-portfolio-theme="elden"] .navbar {
+  background: linear-gradient(180deg, rgba(10, 8, 5, 0.98), rgba(7, 6, 4, 0.95)) !important;
+  border-top: 0;
+  border-bottom: 1px solid rgba(200, 164, 90, 0.42);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.58);
+}
+
+html[data-portfolio-theme="elden"] .navbar::after {
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  left: 0;
+  height: 1px;
+  content: "";
+  background: linear-gradient(90deg, transparent, rgba(200, 164, 90, 0.42), transparent);
+}
+
+html[data-portfolio-theme="elden"] .navbar .navbar-brand,
+html[data-portfolio-theme="elden"] .navbar .nav-link,
+html[data-portfolio-theme="elden"] #search-toggle {
+  font-family: "Cinzel", Georgia, serif;
+  letter-spacing: 0.12em;
+}
+
+html[data-portfolio-theme="elden"] .navbar .navbar-brand::before {
+  color: #9f8247;
+  content: "✦";
+}
+
+html[data-portfolio-theme="elden"] .navbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
+  color: #e6cd8b;
+  border-left-color: #9f8247;
+}
+
+html[data-portfolio-theme="elden"] .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
+  color: #e8d9b4 !important;
+  background: transparent;
+  border-left-color: transparent;
+  clip-path: none;
+  text-shadow: 0 0 16px rgba(200, 164, 90, 0.45);
+}
+
+html[data-portfolio-theme="elden"] h1,
+html[data-portfolio-theme="elden"] h2,
+html[data-portfolio-theme="elden"] h3,
+html[data-portfolio-theme="elden"] h4,
+html[data-portfolio-theme="elden"] .post-title {
+  color: #e7d7ac;
+  font-family: "Cinzel", Georgia, serif;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+}
+
+html[data-portfolio-theme="elden"] h1::before {
+  color: #a98847;
+  font-family: Georgia, serif;
+  content: "✦";
+}
+
+html[data-portfolio-theme="elden"] h2 {
+  border-bottom-color: rgba(200, 164, 90, 0.25);
+}
+
+html[data-portfolio-theme="elden"] h2::after {
+  width: 4rem;
+  height: 1px;
+  background: linear-gradient(90deg, #a98847, transparent);
+  clip-path: none;
+}
+
+html[data-portfolio-theme="elden"] .post-description,
+html[data-portfolio-theme="elden"] .subtitle {
+  color: #988e78;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  letter-spacing: 0.08em;
+}
+
+html[data-portfolio-theme="elden"] .cyber-eyebrow {
+  padding: 0.35rem 0.85rem;
+  color: #c7ae70;
+  background: transparent;
+  border: 1px solid rgba(200, 164, 90, 0.36);
+  clip-path: none;
+  font-family: "Cinzel", Georgia, serif;
+  letter-spacing: 0.14em;
+}
+
+html[data-portfolio-theme="elden"] .cyber-motto {
+  display: none;
+}
+
+html[data-portfolio-theme="elden"] .elden-motto {
+  display: block;
+  max-width: 32rem;
+  margin: 0.15rem 0 1.4rem;
+  color: #f0dca1;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.3rem, 2.5vw, 1.75rem);
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0.055em;
+  line-height: 1.2;
+  text-shadow:
+    0 0 18px rgba(232, 202, 120, 0.34),
+    0 2px 10px rgba(0, 0, 0, 0.85);
+}
+
+html[data-portfolio-theme="elden"] .elden-motto::after {
+  display: inline-block;
+  width: 3.2rem;
+  height: 1px;
+  margin-left: 0.7rem;
+  vertical-align: middle;
+  content: "";
+  background: linear-gradient(90deg, rgba(229, 198, 113, 0.8), transparent);
+}
+
+html[data-portfolio-theme="elden"] .cyber-hero-title span,
+html[data-portfolio-theme="elden"] .cyber-panel h3 {
+  color: #d8bd78;
+}
+
+html[data-portfolio-theme="elden"] .cyber-hero-copy,
+html[data-portfolio-theme="elden"] .cyber-panel p {
+  color: #b9ae96;
+}
+
+html[data-portfolio-theme="elden"] .cyber-panel {
+  background:
+    linear-gradient(145deg, rgba(26, 22, 15, 0.93), rgba(11, 9, 6, 0.97)),
+    repeating-linear-gradient(90deg, transparent 0 7px, rgba(200, 164, 90, 0.018) 7px 8px);
+  border-color: rgba(200, 164, 90, 0.28);
+  clip-path: polygon(14px 0, calc(100% - 14px) 0, 100% 14px, 100% calc(100% - 14px), calc(100% - 14px) 100%, 14px 100%, 0 calc(100% - 14px), 0 14px);
+}
+
+html[data-portfolio-theme="elden"] .cyber-panel::after {
+  right: 18%;
+  bottom: 0;
+  width: 64%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #a98847, transparent);
+}
+
+html[data-portfolio-theme="elden"] .cyber-panel:hover {
+  border-color: #9f8247;
+  box-shadow:
+    inset 0 0 34px rgba(200, 164, 90, 0.06),
+    0 0 22px rgba(0, 0, 0, 0.4);
+}
+
+html[data-portfolio-theme="elden"] .cyber-index {
+  color: #8f7850;
+  font-family: "Cinzel", Georgia, serif;
+}
+
+html[data-portfolio-theme="elden"] .profile img,
+html[data-portfolio-theme="elden"] .post img {
+  border-color: #9f8247;
+  box-shadow:
+    0 0 0 5px rgba(12, 10, 6, 0.9),
+    0 0 0 6px rgba(200, 164, 90, 0.24),
+    0 18px 50px rgba(0, 0, 0, 0.68) !important;
+  clip-path: polygon(4% 0, 96% 0, 100% 4%, 100% 96%, 96% 100%, 4% 100%, 0 96%, 0 4%);
+}
+
+html[data-portfolio-theme="elden"] .profile .more-info {
+  color: #9d927b;
+  background: rgba(18, 15, 10, 0.9);
+  border-left-color: #9f8247;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+}
+
+html[data-portfolio-theme="elden"] .profile .more-info p::before {
+  color: #a98847;
+  content: "✦ ";
+}
+
+html[data-portfolio-theme="elden"] .card,
+html[data-portfolio-theme="elden"] .cv .card {
+  background: linear-gradient(145deg, #18140d, #0c0a07) !important;
+  border-color: rgba(200, 164, 90, 0.28) !important;
+  clip-path: none;
+}
+
+html[data-portfolio-theme="elden"] .card:hover {
+  border-color: #9f8247 !important;
+  box-shadow: 0 0 30px rgba(200, 164, 90, 0.08) !important;
+}
+
+html[data-portfolio-theme="elden"] .projects h2.category,
+html[data-portfolio-theme="elden"] .publications h2.bibliography,
+html[data-portfolio-theme="elden"] table:not(.table) th,
+html[data-portfolio-theme="elden"] .post-meta,
+html[data-portfolio-theme="elden"] .date-column {
+  color: #c8a45a !important;
+  font-family: "Cinzel", Georgia, serif;
+}
+
+html[data-portfolio-theme="elden"] .publications ol.bibliography li {
+  background: rgba(20, 17, 11, 0.74);
+  border-left-color: rgba(200, 164, 90, 0.42);
+}
+
+html[data-portfolio-theme="elden"] .publications ol.bibliography li .abbr abbr {
+  color: #0a0805 !important;
+  background: #b99650;
+  font-family: "Cinzel", Georgia, serif;
+}
+
+html[data-portfolio-theme="elden"] .publications ol.bibliography li .links a.btn,
+html[data-portfolio-theme="elden"] .btn,
+html[data-portfolio-theme="elden"] button {
+  font-family: "Cinzel", Georgia, serif;
+}
+
+html[data-portfolio-theme="elden"] blockquote {
+  background: linear-gradient(90deg, rgba(200, 164, 90, 0.09), transparent);
+  border-left-color: #9f8247;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+}
+
+html[data-portfolio-theme="elden"] footer.fixed-bottom,
+html[data-portfolio-theme="elden"] footer.sticky-bottom {
+  border-top-color: rgba(200, 164, 90, 0.32);
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+html[data-portfolio-theme="elden"] .social .contact-icons a {
+  background: #12100b;
+  border-color: rgba(200, 164, 90, 0.38);
+  clip-path: polygon(50% 0, 90% 18%, 100% 50%, 90% 82%, 50% 100%, 10% 82%, 0 50%, 10% 18%);
+}
+
+html[data-portfolio-theme="elden"] .social .contact-icons a:hover {
+  background: #b99650;
+  border-color: #d9c27b;
+}
+
+html[data-portfolio-theme="elden"] progress::-webkit-progress-value {
+  background: linear-gradient(90deg, #725a2d, #d7bd79, #725a2d);
+}
+
+html[data-portfolio-theme="elden"] .portfolio-theme-switcher {
+  background: rgba(10, 8, 5, 0.94);
+  border-color: rgba(200, 164, 90, 0.45);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.58);
+}
+
+html[data-portfolio-theme="elden"] .theme-switcher-label,
+html[data-portfolio-theme="elden"] .portfolio-theme-switcher button {
+  font-family: "Cinzel", Georgia, serif;
+}
+
+html[data-portfolio-theme="elden"] .portfolio-theme-switcher button[aria-pressed="true"] {
+  color: #090704;
+  background: #b99650;
+}
+
+@media (max-width: 767px) {
+  html[data-portfolio-theme="elden"] body {
+    background-image:
+      linear-gradient(90deg, rgba(8, 7, 4, 0.82), rgba(8, 7, 4, 0.58)), linear-gradient(180deg, rgba(8, 7, 4, 0.08), rgba(8, 7, 4, 0.58)),
+      url("../img/elden-erdtree-reference.webp");
+    background-position:
+      center,
+      center,
+      68% top;
+    background-attachment: scroll;
+  }
+}

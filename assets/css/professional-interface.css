@@ -1,0 +1,651 @@
+html[data-portfolio-theme="professional"] {
+  color-scheme: dark;
+  --global-bg-color: #0d1117;
+  --global-code-bg-color: #161c24;
+  --global-text-color: #e5eaf0;
+  --global-text-color-light: #98a4b1;
+  --global-theme-color: #79cddd;
+  --global-hover-color: #a9e4ee;
+  --global-hover-text-color: #081013;
+  --global-footer-bg-color: #090d12;
+  --global-footer-text-color: #8995a2;
+  --global-footer-link-color: #79cddd;
+  --global-divider-color: #28323d;
+  --global-card-bg-color: #141a22;
+  --global-highlight-color: #c5aa6a;
+  --global-back-to-top-bg-color: #79cddd;
+  --global-back-to-top-text-color: #081013;
+  --global-newsletter-bg-color: #141a22;
+  --global-newsletter-text-color: #e5eaf0;
+}
+
+html[data-portfolio-theme="professional"] * {
+  scrollbar-color: #526270 #0d1117;
+}
+
+html[data-portfolio-theme="professional"] ::selection {
+  color: #071013;
+  background: #8ad6e4;
+}
+
+html[data-portfolio-theme="professional"] body {
+  color: #dbe2e9;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  background:
+    radial-gradient(circle at 85% 10%, rgba(121, 205, 221, 0.055), transparent 25rem),
+    radial-gradient(circle at 5% 70%, rgba(197, 170, 106, 0.035), transparent 24rem), #0d1117;
+}
+
+/* Keep content legible wherever al-folio's light-theme components retain dark text. */
+html[data-portfolio-theme="professional"] main,
+html[data-portfolio-theme="professional"] .post,
+html[data-portfolio-theme="professional"] article,
+html[data-portfolio-theme="professional"] p,
+html[data-portfolio-theme="professional"] li,
+html[data-portfolio-theme="professional"] td,
+html[data-portfolio-theme="professional"] th,
+html[data-portfolio-theme="professional"] label,
+html[data-portfolio-theme="professional"] figcaption,
+html[data-portfolio-theme="professional"] .table,
+html[data-portfolio-theme="professional"] .news,
+html[data-portfolio-theme="professional"] .news .table,
+html[data-portfolio-theme="professional"] .news .table th,
+html[data-portfolio-theme="professional"] .news .table td,
+html[data-portfolio-theme="professional"] .publications .title,
+html[data-portfolio-theme="professional"] .publications .author,
+html[data-portfolio-theme="professional"] .publications .periodical,
+html[data-portfolio-theme="professional"] .publications .additional-info {
+  color: #e5eaf0 !important;
+}
+
+html[data-portfolio-theme="professional"] .text-muted,
+html[data-portfolio-theme="professional"] small {
+  color: #b7c1cb !important;
+}
+
+html[data-portfolio-theme="professional"] body::before {
+  opacity: 0.028;
+  background-image:
+    linear-gradient(rgba(121, 205, 221, 0.35) 1px, transparent 1px), linear-gradient(90deg, rgba(121, 205, 221, 0.35) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: linear-gradient(to bottom, black, transparent 55%);
+}
+
+html[data-portfolio-theme="professional"] p,
+html[data-portfolio-theme="professional"] li {
+  line-height: 1.7;
+}
+
+html[data-portfolio-theme="professional"] a {
+  color: #88d4e2;
+  font-weight: 500;
+  text-decoration-color: rgba(121, 205, 221, 0.35);
+}
+
+html[data-portfolio-theme="professional"] a:hover {
+  color: #b3e8f0;
+  text-shadow: none;
+}
+
+html[data-portfolio-theme="professional"] .navbar {
+  background: rgba(13, 17, 23, 0.94) !important;
+  border-top: 0;
+  border-bottom: 1px solid #27313b;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+}
+
+html[data-portfolio-theme="professional"] .navbar .navbar-brand,
+html[data-portfolio-theme="professional"] .navbar .nav-link,
+html[data-portfolio-theme="professional"] #search-toggle {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.045em;
+  text-transform: none;
+}
+
+html[data-portfolio-theme="professional"] .navbar .navbar-brand {
+  font-weight: 650;
+}
+
+html[data-portfolio-theme="professional"] .navbar .navbar-brand::before {
+  margin-right: 0.48rem;
+  color: #79cddd;
+  content: "●";
+  font-size: 0.45em;
+  vertical-align: middle;
+}
+
+html[data-portfolio-theme="professional"] .navbar.navbar-light .navbar-nav .nav-item .nav-link {
+  margin: 0 0.06rem;
+  padding: 0.48rem 0.64rem;
+  border: 0;
+  border-bottom: 2px solid transparent;
+}
+
+html[data-portfolio-theme="professional"] .navbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
+  color: #a9e4ee;
+  border-left-color: transparent;
+  border-bottom-color: rgba(121, 205, 221, 0.45);
+}
+
+html[data-portfolio-theme="professional"] .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
+  color: #e8edf2 !important;
+  background: transparent;
+  border-bottom-color: #79cddd;
+  clip-path: none;
+}
+
+html[data-portfolio-theme="professional"] main.container {
+  padding-top: 2.8rem;
+  padding-bottom: 4.5rem;
+}
+
+html[data-portfolio-theme="professional"] h1,
+html[data-portfolio-theme="professional"] h2,
+html[data-portfolio-theme="professional"] h3,
+html[data-portfolio-theme="professional"] h4,
+html[data-portfolio-theme="professional"] .post-title {
+  color: #edf1f5;
+  font-family: "Rajdhani", "Segoe UI", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+  text-transform: none;
+}
+
+html[data-portfolio-theme="professional"] h1 {
+  font-size: clamp(2.35rem, 6vw, 4rem);
+  line-height: 1;
+}
+
+html[data-portfolio-theme="professional"] h1::before {
+  display: none;
+  content: "";
+}
+
+html[data-portfolio-theme="professional"] h2 {
+  margin-top: 2.4rem;
+  padding-bottom: 0.5rem;
+  border-bottom-color: #28323d;
+}
+
+html[data-portfolio-theme="professional"] h2::after {
+  width: 2.75rem;
+  height: 2px;
+  margin-left: 0.7rem;
+  background: linear-gradient(90deg, #79cddd, #c5aa6a);
+  clip-path: none;
+}
+
+html[data-portfolio-theme="professional"] .post-description,
+html[data-portfolio-theme="professional"] .subtitle {
+  color: #95a2af;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.92rem;
+  letter-spacing: 0.035em;
+  text-transform: none;
+}
+
+html[data-portfolio-theme="professional"] .cyber-eyebrow {
+  margin: 0.4rem 0 1rem;
+  padding: 0.15rem 0 0.15rem 0.7rem;
+  color: #9aa7b4;
+  background: transparent;
+  border-left: 2px solid #79cddd;
+  clip-path: none;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.075em;
+}
+
+html[data-portfolio-theme="professional"] .professional-motto {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0.1rem 0 1.2rem;
+  color: #a9b4bf;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+}
+
+html[data-portfolio-theme="professional"] .professional-motto::before {
+  display: none;
+  content: "";
+}
+
+html[data-portfolio-theme="professional"] .professional-motto::after {
+  width: 2.4rem;
+  height: 1px;
+  content: "";
+  background: linear-gradient(90deg, #3b4854, transparent);
+}
+
+html[data-portfolio-theme="professional"] .cyber-hero-title {
+  max-width: 38rem;
+  margin-bottom: 1rem;
+  font-size: clamp(2.15rem, 5vw, 3.5rem);
+  line-height: 0.98;
+}
+
+html[data-portfolio-theme="professional"] .cyber-hero-title span {
+  color: #8ad6e4;
+}
+
+html[data-portfolio-theme="professional"] .cyber-hero-copy {
+  max-width: 40rem;
+  margin-bottom: 1.7rem;
+  color: #b5c0ca;
+  font-size: 1.05rem;
+  line-height: 1.72;
+}
+
+html[data-portfolio-theme="professional"] .cyber-grid {
+  gap: 0.8rem;
+  margin: 1.4rem 0 2rem;
+}
+
+html[data-portfolio-theme="professional"] .cyber-panel {
+  min-height: 9rem;
+  padding: 1.05rem 1.1rem;
+  background: rgba(20, 26, 34, 0.9);
+  border: 1px solid #29343f;
+  border-radius: 8px;
+  clip-path: none;
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease;
+}
+
+html[data-portfolio-theme="professional"] .cyber-panel::after {
+  display: none;
+}
+
+html[data-portfolio-theme="professional"] .cyber-panel:hover {
+  background: #171e27;
+  border-color: rgba(121, 205, 221, 0.55);
+  box-shadow: none;
+}
+
+html[data-portfolio-theme="professional"] .cyber-index {
+  color: #c5aa6a;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.67rem;
+  letter-spacing: 0.1em;
+}
+
+html[data-portfolio-theme="professional"] .cyber-panel h3 {
+  margin: 0.35rem 0 0.4rem;
+  color: #e8edf2;
+  font-size: 1.08rem;
+}
+
+html[data-portfolio-theme="professional"] .cyber-panel p {
+  color: #aeb8c3;
+  font-size: 0.91rem;
+  line-height: 1.55;
+}
+
+html[data-portfolio-theme="professional"] .profile img,
+html[data-portfolio-theme="professional"] .post img {
+  border: 1px solid #34414d;
+  border-radius: 10px !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.34) !important;
+  clip-path: none;
+  filter: none; /* Preserve the original colors of scientific figures. */
+}
+
+html[data-portfolio-theme="professional"] .profile .more-info {
+  margin-top: 1rem;
+  padding: 0.65rem 0.75rem;
+  color: #909daa;
+  background: rgba(20, 26, 34, 0.82);
+  border: 1px solid #28323d;
+  border-left: 2px solid #c5aa6a;
+  border-radius: 4px;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.7rem;
+  text-transform: none;
+}
+
+html[data-portfolio-theme="professional"] .profile .more-info p::before {
+  color: #79cddd;
+  content: "· ";
+}
+
+html[data-portfolio-theme="professional"] .research-scattering-visual {
+  margin-top: 0.4rem;
+}
+
+html[data-portfolio-theme="professional"] .research-scattering-visual img {
+  border-color: #34414d;
+  border-radius: 10px !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28) !important;
+  filter: none;
+}
+
+html[data-portfolio-theme="professional"] .research-scattering-visual figcaption {
+  color: #8794a1;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0;
+  text-align: left;
+  text-transform: none;
+}
+
+html[data-portfolio-theme="professional"] .card,
+html[data-portfolio-theme="professional"] .cv .card {
+  background: #141a22 !important;
+  border: 1px solid #29343f !important;
+  border-radius: 8px !important;
+  clip-path: none;
+}
+
+html[data-portfolio-theme="professional"] .cv .card,
+html[data-portfolio-theme="professional"] .cv .card-title,
+html[data-portfolio-theme="professional"] .cv .card p,
+html[data-portfolio-theme="professional"] .cv .card li,
+html[data-portfolio-theme="professional"] .cv .table,
+html[data-portfolio-theme="professional"] .cv .table td,
+html[data-portfolio-theme="professional"] .cv .table th {
+  color: #dfe5eb !important;
+}
+
+html[data-portfolio-theme="professional"] .cv .card a {
+  color: #8bd5e2 !important;
+}
+
+html[data-portfolio-theme="professional"] .cv .card .text-muted,
+html[data-portfolio-theme="professional"] .cv .card .location {
+  color: #9ca8b4 !important;
+}
+
+html[data-portfolio-theme="professional"] .cv .presentation-list {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html[data-portfolio-theme="professional"] .cv .cv-focus-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html[data-portfolio-theme="professional"] .cv .cv-focus-list li {
+  padding: 0.85rem;
+  background: rgba(9, 13, 18, 0.34);
+  border: 1px solid #29343f;
+  border-left: 2px solid #79cddd;
+  border-radius: 5px;
+}
+
+html[data-portfolio-theme="professional"] .cv .cv-focus-list h6,
+html[data-portfolio-theme="professional"] .cv .cv-focus-list p {
+  margin: 0;
+}
+
+html[data-portfolio-theme="professional"] .cv .cv-focus-list h6 {
+  color: #edf2f7;
+  font-weight: 650;
+}
+
+html[data-portfolio-theme="professional"] .cv .cv-focus-list p {
+  margin-top: 0.3rem;
+  color: #aeb8c3 !important;
+  font-size: 0.9rem;
+}
+
+html[data-portfolio-theme="professional"] .cv .presentation-list li {
+  display: grid;
+  grid-template-columns: 4.25rem 1fr;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid #29343f;
+}
+
+html[data-portfolio-theme="professional"] .cv .presentation-list li:first-child {
+  border-top: 0;
+}
+
+html[data-portfolio-theme="professional"] .cv .presentation-year {
+  color: #8bd5e2;
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 700;
+}
+
+html[data-portfolio-theme="professional"] .cv .presentation-list h6,
+html[data-portfolio-theme="professional"] .cv .presentation-list p {
+  margin: 0;
+}
+
+html[data-portfolio-theme="professional"] .cv .presentation-list h6 {
+  color: #edf2f7;
+  font-weight: 650;
+}
+
+html[data-portfolio-theme="professional"] .cv .presentation-list p {
+  margin-top: 0.25rem;
+  color: #9ca8b4 !important;
+  font-size: 0.9rem;
+}
+
+html[data-portfolio-theme="professional"] .card:hover {
+  border-color: rgba(121, 205, 221, 0.48) !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22) !important;
+}
+
+html[data-portfolio-theme="professional"] .projects h2.category,
+html[data-portfolio-theme="professional"] .publications h2.bibliography {
+  color: #dfe5eb;
+  border-color: #28323d;
+  font-family: "Rajdhani", "Segoe UI", sans-serif;
+}
+
+html[data-portfolio-theme="professional"] .publications ol.bibliography li {
+  margin-bottom: 1rem;
+  padding: 0.85rem 0.95rem;
+  background: rgba(20, 26, 34, 0.72);
+  border-left: 2px solid #34414d;
+  border-radius: 0 6px 6px 0;
+}
+
+html[data-portfolio-theme="professional"] .publications ol.bibliography li .abbr abbr {
+  color: #0c1418 !important;
+  background: #8bcbd6;
+  border-radius: 3px;
+  font-family: "Share Tech Mono", monospace;
+}
+
+html[data-portfolio-theme="professional"] .publications ol.bibliography li .links a.btn,
+html[data-portfolio-theme="professional"] .btn,
+html[data-portfolio-theme="professional"] button {
+  border-radius: 5px !important;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  text-transform: none;
+}
+
+html[data-portfolio-theme="professional"] blockquote {
+  color: #b8c2cc;
+  background: rgba(20, 26, 34, 0.7);
+  border-left-color: #79cddd;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.95rem;
+}
+
+html[data-portfolio-theme="professional"] footer.fixed-bottom,
+html[data-portfolio-theme="professional"] footer.sticky-bottom {
+  border-top-color: #26303a;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+html[data-portfolio-theme="professional"] .social .contact-icons a {
+  width: 2.85rem;
+  height: 2.85rem;
+  background: #141a22;
+  border-color: #33404c;
+  border-radius: 7px;
+  clip-path: none;
+}
+
+html[data-portfolio-theme="professional"] .social .contact-icons a:hover {
+  background: #79cddd;
+  border-color: #79cddd;
+}
+
+html[data-portfolio-theme="professional"] progress::-webkit-progress-value {
+  background: linear-gradient(90deg, #79cddd, #c5aa6a);
+}
+
+/* Shared structure: scientific content keeps the same layout in both themes. */
+html[data-portfolio-theme] .featured-software {
+  margin: 1.5rem 0 2rem;
+  padding: clamp(1rem, 3vw, 1.75rem);
+  border: 1px solid var(--global-divider-color);
+  border-left: 3px solid var(--global-theme-color);
+  border-radius: 10px;
+  background: var(--global-card-bg-color);
+}
+
+html[data-portfolio-theme] .research-evidence {
+  max-width: 42rem;
+  margin: 1.5rem auto;
+}
+
+html[data-portfolio-theme] .research-evidence img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0.75rem;
+  background: white;
+  filter: none;
+  box-shadow: none !important;
+}
+
+html[data-portfolio-theme] .research-evidence figcaption {
+  margin-top: 0.65rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+html[data-portfolio-theme] .post a:focus-visible,
+html[data-portfolio-theme] .professional-theme-toggle:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 4px;
+}
+
+html[data-portfolio-theme="professional-light"] .cv .cv-focus-list,
+html[data-portfolio-theme="professional-light"] .cv .presentation-list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html[data-portfolio-theme="professional-light"] .cv .cv-focus-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+html[data-portfolio-theme="professional-light"] .cv .presentation-list li {
+  display: grid;
+  grid-template-columns: 4.25rem 1fr;
+  gap: 1rem;
+  padding: 0.9rem 0;
+}
+
+@media (max-width: 767px) {
+  html[data-portfolio-theme="professional-light"] .cv .cv-focus-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  html[data-portfolio-theme] body,
+  html[data-portfolio-theme] .cv,
+  html[data-portfolio-theme] .cv * {
+    color: #111 !important;
+    background: white !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  html[data-portfolio-theme] body::before,
+  .professional-theme-toggle {
+    display: none !important;
+  }
+
+  .cv li {
+    break-inside: avoid;
+  }
+}
+
+.professional-theme-toggle {
+  position: fixed;
+  right: 1.1rem;
+  bottom: 1.1rem;
+  z-index: 1050;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-width: 5.2rem;
+  padding: 0.55rem 0.72rem;
+  color: #dfe7ee;
+  background: rgba(18, 24, 32, 0.94);
+  border: 1px solid #3a4855;
+  border-radius: 999px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+  font-family: "Share Tech Mono", monospace !important;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+
+.professional-theme-toggle:hover,
+.professional-theme-toggle:focus-visible {
+  color: #071013;
+  background: #8bd5e2;
+  border-color: #8bd5e2;
+  outline: none;
+}
+
+.professional-theme-toggle .theme-toggle-icon {
+  color: #c5aa6a;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.professional-theme-toggle:hover .theme-toggle-icon,
+.professional-theme-toggle:focus-visible .theme-toggle-icon {
+  color: inherit;
+}
+
+@media (max-width: 767px) {
+  html[data-portfolio-theme="professional"] .cv .cv-focus-list {
+    grid-template-columns: 1fr;
+  }
+
+  html[data-portfolio-theme="professional"] .navbar.navbar-light .navbar-nav .nav-item .nav-link {
+    border-bottom: 0;
+    border-left: 2px solid transparent;
+  }
+
+  html[data-portfolio-theme="professional"] .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
+    border-left-color: #79cddd;
+  }
+
+  .professional-theme-toggle {
+    right: 0.75rem;
+    bottom: 0.75rem;
+  }
+}

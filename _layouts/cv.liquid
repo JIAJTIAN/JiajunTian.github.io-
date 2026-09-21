@@ -1,0 +1,59 @@
+---
+layout: default
+---
+<script src="{{ '/assets/js/professional-theme.js' | relative_url }}"></script>
+<link rel="stylesheet" href="{{ '/assets/css/professional-interface.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/professional-light.css' | relative_url }}">
+
+{% assign cv_feature_enabled = site.al_folio.features.cv.enabled | default: true %}
+
+{% if site.plugins contains 'al_folio_cv' and cv_feature_enabled %}
+  {% al_folio_cv_render %}
+  {% assign research_focus = site.data.cv.research_focus %}
+  {% if research_focus and research_focus.size > 0 %}
+    <div class="cv">
+      <a class="anchor" id="research-focus"></a>
+      <section class="card mt-3 p-3" aria-labelledby="research-focus-title">
+        <h3 class="card-title font-weight-medium" id="research-focus-title">Research Focus</h3>
+        <ul class="cv-focus-list">
+          {% for focus in research_focus %}
+            <li>
+              <h6>{{ focus.name }}</h6>
+              <p>{{ focus.keywords }}</p>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    </div>
+  {% endif %}
+  {% assign presentations = site.data.cv.presentations %}
+  {% if presentations and presentations.size > 0 %}
+    <div class="cv">
+      <a class="anchor" id="selected-presentations"></a>
+      <section class="card mt-3 p-3" aria-labelledby="selected-presentations-title">
+        <h3 class="card-title font-weight-medium" id="selected-presentations-title">Selected Presentations</h3>
+        <ul class="presentation-list">
+          {% for presentation in presentations %}
+            <li>
+              <span class="presentation-year">{{ presentation.date }}</span>
+              <div>
+                <h6>{{ presentation.name }}</h6>
+                <p>{{ presentation.summary }}</p>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    </div>
+  {% endif %}
+{% else %}
+  <div class="post">
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <p class="post-description">CV rendering is unavailable.</p>
+    </header>
+    <article>
+      <p>Enable the <code>al_folio_cv</code> plugin and set <code>al_folio.features.cv.enabled: true</code> to render this page.</p>
+    </article>
+  </div>
+{% endif %}

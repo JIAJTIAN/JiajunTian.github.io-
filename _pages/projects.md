@@ -1,15 +1,37 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
-description: A growing collection of your cool projects.
+title: RESEARCH SOFTWARE
+permalink: /software/
+description: Scientific software and data-analysis tools developed for X-ray scattering research.
 nav: true
-nav_order: 3
-display_categories: [work, fun]
+nav_order: 4
+display_categories: [software]
 horizontal: false
 ---
 
+<script src="{{ '/assets/js/professional-theme.js' | relative_url }}"></script>
+<link rel="stylesheet" href="{{ '/assets/css/professional-interface.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/professional-light.css' | relative_url }}">
+
 <!-- pages/projects.md -->
+
+I develop scientific software as part of my beamline research. These tools connect acquisition, data reduction, and physical interpretation while preserving the context of each measurement.
+
+<section class="featured-software" aria-labelledby="featured-software-title">
+  <p class="professional-motto">FEATURED RESEARCH TOOL</p>
+  <h2 id="featured-software-title">FrameByFrame-ASWAXS</h2>
+  <p>From detector frames to checked, traceable scattering data. A graphical workflow for guided reduction, frame-stability checks, and recorded processing choices.</p>
+  <p><strong>Status:</strong> Active research software; not yet publicly released.</p>
+  {% assign featured_tool = site.projects | where: "title", "FrameByFrame-ASWAXS" | first %}
+  {% if featured_tool %}
+  <a href="{{ featured_tool.url | relative_url }}">Explore FrameByFrame</a>
+  {% endif %}
+</section>
+
+## Tools across the experiment
+
+ASWAXS Collector coordinates acquisition; FrameByFrame reduces and checks the data; element-specific models support interpretation. Physics-informed benchmarks are exploratory work, separate from these experimental tools.
+
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
@@ -29,7 +51,7 @@ horizontal: false
     </div>
   </div>
   {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
+  <div class="row row-cols-1 row-cols-md-2">
     {% for project in sorted_projects %}
       {% include projects.liquid %}
     {% endfor %}
@@ -55,7 +77,7 @@ horizontal: false
     </div>
   </div>
   {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
+  <div class="row row-cols-1 row-cols-md-2">
     {% for project in sorted_projects %}
       {% include projects.liquid %}
     {% endfor %}

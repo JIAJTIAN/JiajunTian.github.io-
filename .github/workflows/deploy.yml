@@ -96,7 +96,8 @@ jobs:
           sudo apt-get update && sudo apt-get install -y imagemagick
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
-          bundle exec jekyll build
+          # This repository is a project site; keep local preview at the root.
+          bundle exec jekyll build --baseurl "/JiajunTian.github.io-"
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss

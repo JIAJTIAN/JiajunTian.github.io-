@@ -1,0 +1,241 @@
+html[data-portfolio-theme="professional"] .gallery-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(13rem, 0.7fr);
+  gap: clamp(1.5rem, 5vw, 4.5rem);
+  align-items: end;
+  margin: 0.6rem 0 2.2rem;
+  padding: clamp(1.25rem, 3vw, 2.1rem);
+  background: linear-gradient(135deg, rgba(121, 205, 221, 0.08), rgba(197, 170, 106, 0.04));
+  border: 1px solid #2d3945;
+  border-left: 3px solid #79cddd;
+  border-radius: 10px;
+}
+
+html[data-portfolio-theme="professional"] .gallery-kicker {
+  margin: 0 0 0.65rem;
+  color: #79cddd;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.13em;
+}
+
+html[data-portfolio-theme="professional"] .gallery-intro h2 {
+  max-width: 18ch;
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.55rem, 4vw, 2.75rem);
+  line-height: 1.08;
+}
+
+html[data-portfolio-theme="professional"] .gallery-intro-copy p {
+  max-width: 62ch;
+  margin: 0;
+  color: #b7c0c9;
+}
+
+html[data-portfolio-theme="professional"] .gallery-interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-content: flex-end;
+}
+
+html[data-portfolio-theme="professional"] .gallery-interests span {
+  padding: 0.38rem 0.58rem;
+  color: #aeb9c4;
+  background: rgba(9, 13, 18, 0.62);
+  border: 1px solid #35424f;
+  border-radius: 999px;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+html[data-portfolio-theme="professional"] .gallery-toolbar {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+html[data-portfolio-theme="professional"] .gallery-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.42rem;
+}
+
+html[data-portfolio-theme="professional"] .gallery-filter {
+  padding: 0.38rem 0.68rem;
+  color: #9eabb7;
+  background: transparent;
+  border: 1px solid #35424f;
+  border-radius: 999px !important;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.67rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+html[data-portfolio-theme="professional"] .gallery-filter:hover,
+html[data-portfolio-theme="professional"] .gallery-filter:focus-visible,
+html[data-portfolio-theme="professional"] .gallery-filter[aria-pressed="true"] {
+  color: #071115;
+  background: #79cddd;
+  border-color: #79cddd;
+}
+
+html[data-portfolio-theme="professional"] .gallery-count {
+  flex: none;
+  margin: 0;
+  color: #7f8c99;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+}
+
+html[data-portfolio-theme="professional"] .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-flow: dense;
+  gap: 1rem;
+}
+
+html[data-portfolio-theme="professional"] .gallery-card {
+  position: relative;
+  min-height: 22rem;
+  overflow: hidden;
+  background: #0b1117;
+  border: 1px solid #2e3b47;
+  border-radius: 9px;
+}
+
+html[data-portfolio-theme="professional"] .gallery-card[hidden] {
+  display: none;
+}
+
+html[data-portfolio-theme="professional"] .gallery-card--featured {
+  grid-column: span 2;
+  min-height: 31rem;
+}
+
+html[data-portfolio-theme="professional"] .gallery-card img {
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+  border: 0;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  filter: saturate(0.88) contrast(1.03);
+  transition:
+    filter 240ms ease,
+    transform 420ms ease;
+}
+
+html[data-portfolio-theme="professional"] .gallery-card::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent 38%, rgba(5, 9, 13, 0.92) 100%);
+}
+
+html[data-portfolio-theme="professional"] .gallery-card:hover img {
+  filter: saturate(1) contrast(1.05);
+  transform: scale(1.018);
+}
+
+html[data-portfolio-theme="professional"] .gallery-card-content {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  padding: clamp(1rem, 2.5vw, 1.45rem);
+}
+
+html[data-portfolio-theme="professional"] .gallery-card-meta {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.4rem;
+  color: #9acbd4;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.63rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+html[data-portfolio-theme="professional"] .gallery-sample-badge {
+  padding: 0.14rem 0.38rem;
+  color: #d2bd8b;
+  border: 1px solid rgba(197, 170, 106, 0.58);
+  border-radius: 999px;
+}
+
+html[data-portfolio-theme="professional"] .gallery-card h3 {
+  margin: 0 0 0.35rem;
+  color: #f2f5f7;
+  font-size: clamp(1.08rem, 2vw, 1.42rem);
+}
+
+html[data-portfolio-theme="professional"] .gallery-card p {
+  max-width: 58ch;
+  margin: 0;
+  color: #c0c8cf;
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+html[data-portfolio-theme="professional"] .gallery-draft-note {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.85rem;
+  margin-top: 1.2rem;
+  padding: 1rem 1.1rem;
+  color: #98a5b1;
+  background: rgba(13, 18, 24, 0.7);
+  border: 1px dashed #394653;
+  border-radius: 8px;
+  font-size: 0.83rem;
+}
+
+html[data-portfolio-theme="professional"] .gallery-draft-note strong {
+  color: #d2bd8b;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  html[data-portfolio-theme="professional"] .gallery-intro {
+    grid-template-columns: 1fr;
+  }
+
+  html[data-portfolio-theme="professional"] .gallery-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  html[data-portfolio-theme="professional"] .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  html[data-portfolio-theme="professional"] .gallery-card,
+  html[data-portfolio-theme="professional"] .gallery-card--featured {
+    grid-column: auto;
+    min-height: 23rem;
+  }
+
+  html[data-portfolio-theme="professional"] .gallery-draft-note {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-portfolio-theme="professional"] .gallery-card img {
+    transition: none;
+  }
+}
